@@ -107,7 +107,7 @@ btnStar.grid(row=2, column=3, sticky=tk.W+tk.E, padx=5)
 btnSlash = Button(btnFrame, text="÷", font=('Arial', 18), width=5, command=lambda: button_press('÷'))
 btnSlash.grid(row=3, column=3, sticky=tk.W+tk.E, padx=5)
 
-btnComma = Button(btnFrame, text=",", font=('Arial', 18), width=5, command=lambda: button_press(','))
+btnComma = Button(btnFrame, text=".", font=('Arial', 18), width=5, command=lambda: button_press('.'))
 btnComma.grid(row=4, column=2, sticky=tk.W+tk.E, padx=5, pady=5)
 
 btnEqual = Button(btnFrame, text="=", font=('Arial', 18), width=5, command=equals)
