@@ -54,9 +54,8 @@ screen['bg'] = 'light grey'
 
 equation_label = StringVar()
 
-label = Label(screen, textvariable=equation_label, font=('consoles', 20), bg="white", width=24, height=2)
+label = Label(screen, textvariable=equation_label, font=('consoles', 20), bg="white", width=24, height=2, borderwidth=5)
 label.pack()
-
 
 btnFrame = tk.Frame(screen)
 btnFrame.columnconfigure(0, weight=1)
@@ -101,19 +100,19 @@ btnPlus.grid(row=0, column=3, sticky=tk.W+tk.E, padx=5)
 btnMin = Button(btnFrame, text="-", font=('Arial', 18), width=5, command=lambda: button_press('-'))
 btnMin.grid(row=1, column=3, sticky=tk.W+tk.E, padx=5)
 
-btnStar = Button(btnFrame, text="×", font=('Arial', 18), width=5, command=lambda: button_press('×'))
+btnStar = Button(btnFrame, text="×", font=('Arial', 18), width=5, command=lambda: button_press('*'))
 btnStar.grid(row=2, column=3, sticky=tk.W+tk.E, padx=5)
 
-btnSlash = Button(btnFrame, text="÷", font=('Arial', 18), width=5, command=lambda: button_press('÷'))
+btnSlash = Button(btnFrame, text="÷", font=('Arial', 18), width=5, command=lambda: button_press('/'))
 btnSlash.grid(row=3, column=3, sticky=tk.W+tk.E, padx=5)
 
-btnComma = Button(btnFrame, text=".", font=('Arial', 18), width=5, command=lambda: button_press('.'))
+btnComma = Button(btnFrame, text=",", font=('Arial', 18), width=5, command=lambda: button_press(','))
 btnComma.grid(row=4, column=2, sticky=tk.W+tk.E, padx=5, pady=5)
 
 btnEqual = Button(btnFrame, text="=", font=('Arial', 18), width=5, command=equals)
 btnEqual.grid(row=4, column=3, sticky=tk.W+tk.E, padx=5, pady=5)
 
-btnClear = Button(btnFrame, text="C", font=('Arial', 18), width=5, command=lambda: clear)
+btnClear = Button(btnFrame, text="C", font=('Arial', 18), width=5, command=clear)
 btnClear.grid(row=0, columnspan=3, sticky=tk.W+tk.E, padx=5, pady=5)
 
 
